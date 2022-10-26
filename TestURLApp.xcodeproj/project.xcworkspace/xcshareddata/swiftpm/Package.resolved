@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "HTMLReader",
+        "repositoryURL": "https://github.com/nolanw/HTMLReader",
+        "state": {
+          "branch": null,
+          "revision": "d4003bf59feead2361f684a372123eae0afe104f",
+          "version": "2.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

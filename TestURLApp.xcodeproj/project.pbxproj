@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		89FCF30128F5C87C00335E27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FCF30028F5C87C00335E27 /* main.m */; };
 		89FCF30C28F5C87D00335E27 /* TestURLAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FCF30B28F5C87D00335E27 /* TestURLAppTests.m */; };
 		89FCF31728F5C87D00335E27 /* TestURLAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FCF31628F5C87D00335E27 /* TestURLAppUITests.m */; };
+		89FCF32628F5CAA400335E27 /* HTMLReader in Frameworks */ = {isa = PBXBuildFile; productRef = 89FCF32528F5CAA400335E27 /* HTMLReader */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FCF32628F5CAA400335E27 /* HTMLReader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,9 @@
 			dependencies = (
 			);
 			name = TestURLApp;
+			packageProductDependencies = (
+				89FCF32528F5CAA400335E27 /* HTMLReader */,
+			);
 			productName = TestURLApp;
 			productReference = 89FCF2F128F5C87700335E27 /* TestURLApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 89FCF2E828F5C87700335E27;
+			packageReferences = (
+				89FCF32428F5CAA400335E27 /* XCRemoteSwiftPackageReference "HTMLReader" */,
+			);
 			productRefGroup = 89FCF2F228F5C87700335E27 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,9 +431,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TestURLApp/TestURLApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6KF5V8KY28;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TestURLApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,6 +442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RS.TestURLApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -442,9 +451,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TestURLApp/TestURLApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6KF5V8KY28;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TestURLApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,6 +462,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RS.TestURLApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -572,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89FCF32428F5CAA400335E27 /* XCRemoteSwiftPackageReference "HTMLReader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nolanw/HTMLReader";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89FCF32528F5CAA400335E27 /* HTMLReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89FCF32428F5CAA400335E27 /* XCRemoteSwiftPackageReference "HTMLReader" */;
+			productName = HTMLReader;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89FCF2E928F5C87700335E27 /* Project object */;
 }
